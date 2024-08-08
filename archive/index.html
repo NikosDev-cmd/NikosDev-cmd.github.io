@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Emoji Are You?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://game-cdn.poki.com/scripts/v2/poki-sdk.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="quiz" class="screen active">
+            <h1>What Emoji Are You?</h1>
+            <div id="question-container"></div>
+            <div id="answer-buttons" class="btn-container"></div>
+        </div>
+        <div id="loading" class="screen hidden">
+            <h1>Calculating your result...</h1>
+            <div class="loading-bar">
+                <div class="loading-bar-fill"></div>
+            </div>
+        </div>
+        <div id="result" class="screen hidden">
+            <h1>You are:</h1>
+            <div id="emoji" class="hidden"></div>
+            <button id="restart-button">Try Again</button>
+        </div>
+        <div id="banner-container" style="width: 300px; height: 250px"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

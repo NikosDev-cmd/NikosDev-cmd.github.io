@@ -3,30 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What Emoji Are You?</title>
+    <title>NikosDev Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://game-cdn.poki.com/scripts/v2/poki-sdk.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div id="quiz" class="screen active">
-            <h1>What Emoji Are You?</h1>
-            <div id="question-container"></div>
-            <div id="answer-buttons" class="btn-container"></div>
-        </div>
-        <div id="loading" class="screen hidden">
-            <h1>Calculating your result...</h1>
-            <div class="loading-bar">
-                <div class="loading-bar-fill"></div>
+    <header>
+        <h1>Welcome to NikosDev Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio website. I am an indie game developer and here are some of my projects.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project" id="game">
+                <h3>My Game</h3>
+                <a href="archive/index.html" target="_blank">Play Now</a>
             </div>
+            <!-- Buttons for repositories will be inserted here by script.js -->
         </div>
-        <div id="result" class="screen hidden">
-            <h1>You are:</h1>
-            <div id="emoji" class="hidden"></div>
-            <button id="restart-button">Try Again</button>
-        </div>
-        <div id="banner-container" style="width: 300px; height: 250px"></div>
-    </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via my <a href="https://github.com/NikosDev-cmd">GitHub</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NikosDev</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
