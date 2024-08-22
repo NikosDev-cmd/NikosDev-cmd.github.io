@@ -6,46 +6,52 @@
     <title>NikosDev - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="cursor"></div>
+    <header id="landing-page">
+        <div class="logo">
+            <img src="images\nikosdev_logo_v1.png" alt="NikosDev Logo">
+        </div>
+        <h1>Welcome to the Dark Side</h1>
+        <p>Crafting digital experiences with a gothic touch.</p>
+    </header>
 
-    <div id="intro">
-        <h1 class="glitch">NikosDev</h1>
-        <p class="glitch">Game developer | Software Engineer</p>
-    </div>
-
-    <div id="projects" class="section">
+    <section id="projects" class="section">
         <h2>My Projects</h2>
         <div class="project-gallery">
-            <!-- Example Project Card -->
             <div class="project-card">
-                <img src="path-to-image.jpg" alt="Project Thumbnail">
+                <img src="images\Trevor.png" alt="Project Thumbnail">
                 <h3>Trevor</h3>
-                <p>Assistant</p>
-                <a href="project-link.html" class="project-link">View Project</a>
+                <p>Voice Assistant with some features.</p>
+                <a href="https://github.com/NikosDev-cmd/trevor" class="project-link">View Project</a>
             </div>
-            <!-- Repeat for each project -->
+            <div class="project-card">
+                <img src="images\Simple Controller.png" alt="Project Thumbnail">
+                <h3>Simple Player Controller</h3>
+                <p>Unity Engine.</p>
+                <a href="https://github.com/NikosDev-cmd/SimplePlayerController" class="project-link">View Project</a>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div id="about" class="section">
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I’m a Game developer</p>
-    </div>
-
-    <div id="contact" class="section">
+        <p>Game creator.</p>
+    </section>
+    
+    <section id="contact" class="section">
         <h2>Contact</h2>
-        <form action="submit-form.php" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-
+        <div class="social-media-icons">
+            <a href="https://github.com/NikosDev-cmd" target="_blank">
+                <img src="images\github-icon.png" alt="GitHub">
+            </a>
+            <a href="https://x.com/wtf_nikos" target="_blank">
+                <img src="images\twitter-64.png" alt="Twitter">
+            </a>
+        </div>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
