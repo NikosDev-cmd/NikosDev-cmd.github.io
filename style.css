@@ -76,6 +76,21 @@ body {
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
 }
 
+.app-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .app-links img {
+    transition: transform 0.3s;
+  }
+  
+  .app-links img:hover {
+    transform: scale(1.1);
+  }
+
 /* Contact Form */
 button[type="submit"] {
     background-color: #ff0000;
