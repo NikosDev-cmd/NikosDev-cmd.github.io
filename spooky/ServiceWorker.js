@@ -1,9 +1,9 @@
 const cacheName = "NikosDev-Spooky Island-0.1";
 const contentToCache = [
-    "Build/web.loader.js",
-    "Build/web.framework.js.br",
-    "Build/web.data.br",
-    "Build/web.wasm.br",
+    "Build/0e4acddc2507cd81174c8375e5c7b738.loader.js",
+    "Build/e347d52f796dc5b9e5a105e3a6deb53b.framework.js.unityweb",
+    "Build/b484523474539adf73e3f8fd681640a2.data.unityweb",
+    "Build/2668e3be5e913b169b460aaa5f1c5205.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
