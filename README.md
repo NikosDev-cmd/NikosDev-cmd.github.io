@@ -1,3 +1,1 @@
-My protfolio site. Inspred by:
-[tarvisscott.com ](https://www.travisscott.com/),
-[playboicarti.com](https://www.playboicarti.com/)
+![](https://tenor.com/view/doo-doo-doo-gif-2582333307765776092)
