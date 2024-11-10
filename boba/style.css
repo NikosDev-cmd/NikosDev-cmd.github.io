@@ -1,0 +1,92 @@
+/* Body and General Styles */
+body {
+  background-color: #0000ff;
+  color: #00ff00;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  animation: bgAnimation 10s infinite alternate;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 48px;
+  text-shadow: 2px 2px 0 #ff00ff;
+  margin-top: 20px;
+}
+
+/* Marquee for scrolling text */
+marquee {
+  color: #ffff00;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+/* Container for main content */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  border: 5px solid #ff00ff;
+  padding: 20px;
+  background-color: #00ffff;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Link styles */
+a {
+  color: #ff00ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #00ff00;
+  background-color: #ff0000;
+  padding: 2px;
+}
+
+/* Blinking text */
+.blink {
+  color: #ff0000;
+  animation: blinkAnimation 1s infinite;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Cool retro text */
+.cool-text {
+  font-size: 20px;
+  color: #00ff00;
+  text-shadow: 1px 1px 0 #000;
+}
+
+/* Image grid for gallery */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border: 3px solid #ff00ff;
+  box-shadow: 0 0 10px #ff00ff;
+  transition: transform 0.3s;
+}
+
+.grid img:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Keyframes for animations */
+@keyframes bgAnimation {
+  from { background-color: #0000ff; }
+  to { background-color: #ff00ff; }
+}
+
+@keyframes blinkAnimation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
