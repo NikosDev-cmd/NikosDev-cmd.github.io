@@ -42,25 +42,24 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 40px;
-}
-
 h2 {
     border-bottom: 2px solid #bb86fc;
     padding-bottom: 5px;
 }
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .project-card {
     background-color: #1e1e1e;
-    padding: 15px;
+    border: 1px solid #333;
     border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
     transition: transform 0.3s;
 }
 
@@ -70,17 +69,33 @@ h2 {
 
 .project-card img {
     width: 100%;
-    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card-content {
+    padding: 15px;
 }
 
 .project-card h3 {
-    margin-top: 10px;
-    font-size: 1.5em;
+    margin: 0 0 10px;
+    font-size: 1.2em;
 }
 
 .project-card p {
+    margin: 0 0 15px;
     font-size: 0.9em;
     color: #b0b0b0;
+}
+
+.project-card a {
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -88,4 +103,5 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.8em;
+    color: #b0b0b0;
 }
