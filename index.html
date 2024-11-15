@@ -3,63 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NikosDev - Portfolio</title>
+    <title>NikosDev Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="landing-page">
-        <div class="logo">
-            <img src="images\nikosdev_logo_v1.png" alt="NikosDev Logo">
-        </div>
-        <h1>Welcome!</h1>
-        <p>I'm making good projects (maybe).</p>
+    <header>
+        <h1>NikosDev Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section id="projects" class="section">
-        <h2>My Projects</h2>
-        <div class="project-gallery">
-            <div class="project-card">
-                <img src="images\Trevor.png" alt="Project Thumbnail">
-                <h3>Trevor</h3>
-                <p>Voice Assistant with some features.</p>
-                <a href="https://github.com/NikosDev-cmd/trevor" class="project-link">View Project</a>
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid" id="project-grid">
+                <!-- Project cards will be injected here by script.js -->
             </div>
-            <div class="project-card">
-                <img src="images\Simple Controller.png" alt="Project Thumbnail">
-                <h3>Simple Player Controller</h3>
-                <p>Unity Engine.</p>
-                <a href="https://github.com/NikosDev-cmd/SimplePlayerController" class="project-link">View Project</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Game creator.</p>
-    </section>
-    
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <div class="social-media-icons">
-            <a href="https://github.com/NikosDev-cmd" target="_blank">
-                <img src="images\github-icon.png" alt="GitHub">
-            </a>
-            <a href="https://x.com/wtf_nikos" target="_blank">
-                <img src="images\twitter-64.png" alt="Twitter">
-            </a>
-        </div>
-        <div class="app-links">
-            <a href="https://www.amazon.com/s?i=mobile-apps&rh=p_4%3ANikosDev&search-type=ss" target="_blank">
-              <img src="images/amazon-appstore.png" alt="Amazon Appstore" width="50" height="50">
-            </a>
-            <a href="https://nikosdev-cmd.itch.io/" target="_blank">
-              <img src="images/itch-io.png" alt="Itch.io" width="50" height="50">
-            </a>
-          </div>
-    </section>
-    
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm NikosDev, a game developer with a passion for creating dark, minimalist games. I specialize in C and JavaScript, and all of my projects are available on GitHub and itch.io.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:nikos.dev@yahoo.com">nikos.dev@yahoo.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 NikosDev. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
